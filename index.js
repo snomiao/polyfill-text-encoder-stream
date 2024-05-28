@@ -1,4 +1,4 @@
-// index.js
+// index.ts
 class TextEncoderStream {
   _encoder = new TextEncoder;
   _reader = null;
