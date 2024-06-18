@@ -1,4 +1,4 @@
-export default class TextEncoderStream {
+export default class PolyfillTextEncoderStream {
   // @builder.io/qwik-city/middleware/bun
   // still missing from bun: last check was bun version 1.1.8
   private _encoder = new TextEncoder();
