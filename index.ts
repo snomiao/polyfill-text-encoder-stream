@@ -10,13 +10,17 @@ export default class TextEncoderStream {
       this._reader = controller;
     },
   });
-
   public writable = new WritableStream({
     write: async (chunk) => {
+      if(typeof chunk !== 'string'){
+        this._reader.enqueue(chunk); 
+        return;
+      }
       if (chunk != null && this._reader) {
         const encoded = this._encoder.encode(chunk);
         this._reader.enqueue(encoded);
       }
+
     },
     close: () => {
       this._reader?.close();
