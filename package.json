@@ -1,14 +1,31 @@
 {
   "name": "polyfill-text-encoder-stream",
-  "module": "index.js",
+  "version": "0.0.5",
+  "author": "snomiao <snomiao@gmail.com>",
   "type": "module",
+  "exports": {
+    "import": "./dist/index.js",
+    "types": "./index.ts"
+  },
+  "main": "index.js",
+  "module": "index.js",
+  "types": "index.ts",
+  "files": [
+    "*.ts",
+    "dist"
+  ],
+  "scripts": {
+    "build": "bun build index.ts --outdir=dist",
+    "prerelease": "bun run build && bun run test",
+    "release": "bunx standard-version && git push --follow-tags && npm publish",
+    "test": "bun test"
+  },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "^1.1.4",
+    "@types/jest": "^29.5.12",
+    "typescript": "^5.4.5"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
-  },
-  "version": "0.0.4",
-  "main": "index.js",
-  "types": "index.ts"
+  }
 }

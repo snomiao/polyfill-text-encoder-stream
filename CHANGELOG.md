@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://github.com/snomiao/polyfill-text-encoder-stream/compare/v0.0.4...v0.0.5) (2024-06-18)
+
 ### [0.0.4](https://github.com/snomiao/PolyfillTextEncoderStream/compare/v0.0.3...v0.0.4) (2024-05-28)
 
 ### [0.0.2](https://github.com/snomiao/PolyfillTextEncoderStream/compare/v0.0.3...v0.0.2) (2024-05-28)
