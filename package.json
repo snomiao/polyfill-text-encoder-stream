@@ -1,15 +1,15 @@
 {
   "name": "polyfill-text-encoder-stream",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "author": "snomiao <snomiao@gmail.com>",
   "type": "module",
   "exports": {
     "import": "./dist/index.js",
-    "types": "./index.ts"
+    "types": "./dist/index.d.ts"
   },
   "main": "dist/index.js",
   "module": "index.js",
-  "types": "index.ts",
+  "types": "dist/index.d.ts",
   "files": [
     "*.ts",
     "dist"
