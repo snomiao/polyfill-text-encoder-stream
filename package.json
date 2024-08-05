@@ -1,6 +1,6 @@
 {
   "name": "polyfill-text-encoder-stream",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "author": "snomiao <snomiao@gmail.com>",
   "type": "module",
   "exports": {
@@ -16,6 +16,8 @@
   ],
   "scripts": {
     "build": "bun build index.ts --outdir=dist",
+    "build:tsc": "bunx tsc",
+    "dev:tsc": "bunx tsc -w",
     "prerelease": "bun run build && bun run test",
     "release": "bunx standard-version && git push --follow-tags && npm publish",
     "test": "bun test"
