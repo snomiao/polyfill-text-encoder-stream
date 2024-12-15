@@ -1,5 +1,7 @@
 # polyfill-text-encoder-stream
 
+This is a polyfill for TextEncoderStream.
+
 @builder.io/qwik-city/middleware/bun
 still missing from bun: last check was bun version 1.1.8
   
