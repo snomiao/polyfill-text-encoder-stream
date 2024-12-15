@@ -1,8 +1,12 @@
 {
   "name": "polyfill-text-encoder-stream",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "This is a polyfill for TextEncoderStream.",
-  "keywords": ["WebStreams", "TextEncoderStream", "polyfill"],
+  "keywords": [
+    "WebStreams",
+    "TextEncoderStream",
+    "polyfill"
+  ],
   "homepage": "https://github.com/snomiao/polyfill-text-encoder-stream#readme",
   "bugs": {
     "url": "https://github.com/snomiao/polyfill-text-encoder-stream/issues"
