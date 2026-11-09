@@ -1,6 +1,6 @@
 {
   "name": "polyfill-text-encoder-stream",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "This is a polyfill for TextEncoderStream.",
   "keywords": [
     "WebStreams",
