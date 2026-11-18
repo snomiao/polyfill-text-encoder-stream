@@ -5,12 +5,12 @@ export default class PolyfillTextEncoderStream {
   private _reader: ReadableStreamDefaultController<any> | null = null;
   public ready = Promise.resolve();
   public closed = false;
-  public readable = new ReadableStream<Uint8Array>({
+  public readable: ReadableStream<Uint8Array> = new ReadableStream<Uint8Array>({
     start: (controller) => {
       this._reader = controller;
     },
   });
-  public writable = new WritableStream<Uint8Array | string>({
+  public writable: WritableStream<string | Uint8Array> = new WritableStream<Uint8Array | string>({
     write: async (chunk) => {
       if (typeof chunk !== "string") {
         this._reader!.enqueue(chunk);
